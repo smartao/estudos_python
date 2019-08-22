@@ -82,16 +82,10 @@ Saída
 Enter a name of a fruit: apple
 INPUT_USER is a lovely fruit.
 '''
+# Transformando as letras da frase de entrada titulo
+# Primeia em maisculo restante em minusculos
+titulo = input('Entre com o titulo do video: ')
+print(titulo.title())
 #
 #Fonte: 
 #Curso Python for Beginners: Learn Python Programming (Python 3) Udemy Aula 10 a 14
-
-# Comentando várias linhas
-
-'''
-NAO ESQUERCE DE COLOCAR OS PRINTS RELACIONADOS A AULA 14 FORMATANDO STRING
-'''
-
-#!/usr/bin/python3
-#titulo = input('Entre com o titulo do video: ')
-#print(titulo.title())
