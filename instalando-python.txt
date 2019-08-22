@@ -1,0 +1,17 @@
+Instalando o python3
+
+Ubuntu
+$ sudo apt-get install -y python3 idle3
+
+CentOS
+$ yum install -y python3 python3-tools
+
+Instlando o python pip
+$ sudo apt install python-pip
+
+Instalando o estencoes
+$ sudo pip install simplejson
+$ sudo pip install pylint
+
+
+
