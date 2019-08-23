@@ -12,6 +12,6 @@ $ sudo apt install python-pip
 Instalando o estencoes
 $ sudo pip install simplejson
 $ sudo pip install pylint
-
+$ sudo apt install python3-lxml
 
 
