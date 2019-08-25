@@ -52,7 +52,7 @@ print('I love python {}.'.format(version)) # I love Pyhton 3.
 print('{0:8} | {1:8}'.format("Fruit","Quatity"))
 print('{0:8} | {1:8}'.format("Apple","3"))
 print('{0:8} | {1:8}'.format("Orange","10"))
-'''
+"""
 Saida
 Fruit    | Quatity 
 Apple    | 3       
@@ -62,7 +62,7 @@ Alinhamentos disponíveis
 < Left # Alinhamento padrao
 ^ Center
 > Right
-'''
+"""
 # Alinhamento para esquerda
 print('{0:8} | {1:>8}'.format("Fruit","Quatity"))
 print('{0:8} | {1:>8}'.format("Apple","3"))
@@ -87,5 +87,5 @@ INPUT_USER is a lovely fruit.
 titulo = input('Entre com o titulo do video: ')
 print(titulo.title())
 #
-#Fonte: 
+#Fontes: 
 #Curso Python for Beginners: Learn Python Programming (Python 3) Udemy Aula 10 a 14
