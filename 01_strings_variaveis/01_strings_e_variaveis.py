@@ -2,7 +2,7 @@
 #
 ####### Formatando Strings ########
 #
-### Impressao basica ###
+# Impressao basica #
 hello="ola mundo"
 print(hello)
 #
@@ -10,7 +10,7 @@ print(hello)
 fruit="Fruta de teste" 
 print(len(fruit))
 #
-### Utilizando aspas ###
+# Utilizando aspas #
 double = "She said, \"That's a great tasting apple!\""
 single = 'She said, "That\'s a great tasting apple!"'
 #
@@ -19,7 +19,7 @@ print(single) # She said, "That's a great tasting apple!"
 #
 ### Concatenacao ###
 #
-# Exemplo1 Variavies
+# Exemplo1 variavies
 first = 'I'
 second = 'love'
 third = 'Python'
