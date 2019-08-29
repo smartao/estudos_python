@@ -1,5 +1,11 @@
 #!/usr/bin/python3
-#
+'''
+Sintaxe
+list_name = [item_1, item_2, item_N]
+list_name = []
+list_name[index]
+'''
+
 ### Exemplo basico de lista
 animals = ['man', 'bear', 'pig']
 print("Imprimindo cada elemento de uma lista")
