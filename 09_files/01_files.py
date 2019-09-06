@@ -11,7 +11,7 @@ open('/var/log/messages')
 open('log/messages')
 '''
 
-#Exemplo de leitura 
+# Exemplo de leitura
 hosts = open('/etc/hostname')
 hosts_file_contents = hosts.read()
 print('\nimprimindo o conteudo do arquivo hosts')
@@ -41,7 +41,7 @@ print(hosts.read())
 print('Current position: {}'.format(hosts.tell()))
 print(hosts.read())
 
-hosts.seek(0) # Alterando a posicao atual para o inicio do arquivo
+hosts.seek(0)  # Alterando a posicao atual para o inicio do arquivo
 print('Current position: {}'.format(hosts.tell()))
 print(hosts.read())
 
@@ -68,8 +68,8 @@ print('\nVerificar se o arquivo esta aberto o fechado')
 hosts = open('/etc/hostname')
 hosts_file_contents = hosts.read()
 print('File closed? {}'.format(hosts.closed))
-if not hosts.closed: # Caso esteja aberto, feche o arquivo
-    hosts.close() # Fechando o arquivo
+if not hosts.closed:  # Caso esteja aberto, feche o arquivo
+    hosts.close()  # Fechando o arquivo
 print('File closed? {}'.format(hosts.closed))
 
 # Fechando automáticamente arquivos
@@ -139,11 +139,11 @@ Carriage Returns and Line Feeds
 
 # Trabalhando com arquivos binarios
 print('\nLendo caracteres de arquivos binarios como imagens')
-with open('08_files/cat.jpg', 'rb') as cat_picture: # Abrindo o arquivos
-    cat_picture.seek(2) # Indo para o 2 byte do arquivo
-    cat_picture.read(4) # Lendo 4 byte do arquivo
-    print(cat_picture.tell()) # Imprimindo a posicao corrent do arquivos
-    print(cat_picture.mode) # Modo que o arquivos esta, rb 
+with open('08_files/cat.jpg', 'rb') as cat_picture:  # Abrindo o arquivos
+    cat_picture.seek(2)  # Indo para o 2 byte do arquivo
+    cat_picture.read(4)  # Lendo 4 byte do arquivo
+    print(cat_picture.tell())  # Imprimindo a posicao corrent do arquivos
+    print(cat_picture.mode)  # Modo que o arquivos esta, rb
 
 # Criando uma excecao caso o arquivo nao exista
 print('\nTrabalhando com excecao em arquivos')
@@ -152,9 +152,9 @@ print('\nTrabalhando com excecao em arquivos')
 try:
     contacts = open('contacts.txt').read()
 except:
-    contacts = [] # Caso nao exista sera criando a variavel
+    contacts = []  # Caso nao exista sera criando a variavel
 print(len(contacts))
 
 #
-# Fontes: 
-#Curso Python for Beginners: Learn Python Programming (Python 3) Udemy Aula 65 e 66
+# Fontes:
+# Curso Python for Beginners: Learn Python Programming (Python 3) Udemy Aula 65 e 66

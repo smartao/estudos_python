@@ -42,5 +42,5 @@ else:
 print('I suggest {} to your destination.'.format(mode_of_transport))
 
 #
-#Fontes: 
-#Curso Python for Beginners: Learn Python Programming (Python 3) Udemy Aula 32 a 36
+# Fontes:
+# Curso Python for Beginners: Learn Python Programming (Python 3) Udemy Aula 32 a 36

@@ -4,7 +4,7 @@
 #
 animals = ['man', 'bear', 'pig', 'cow', 'duck', 'horse']
 
-some_animals = animals[1:4] # Lembrando que irá ate o valor 3
+some_animals = animals[1:4]  # Lembrando que irá ate o valor 3
 print('Imprimindo do valor 0 ao 3 da lista')
 print('Some animals:      {}'.format(some_animals))
 
@@ -30,5 +30,5 @@ print("\ncortando parte de um elemento, saida segunda e terceira letra")
 print(part_of_a_horse)
 
 #
-#Fontes: 
-#Curso Python for Beginners: Learn Python Programming (Python 3) Udemy Aula 46
+# Fontes:
+# Curso Python for Beginners: Learn Python Programming (Python 3) Udemy Aula 46

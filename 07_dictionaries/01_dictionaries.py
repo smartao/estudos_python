@@ -10,38 +10,56 @@ dictionary_name[key]
 """
 
 # Exemplo simples de dicionarios
-contacts = {'Jason': '555-0123', 'Carl': '555-0987'} # Criando dicionarios com dois valores
-jasons_phone = contacts['Jason'] # Atribuindo o valor da chave Jason a uma varivel
-carls_phone = contacts['Carl'] # Atribuindo o valor da chave Carl a uma variavel
+# Criando dicionario
+pessoa = {'nome': 'Prof. Albert', 'idade': 43, 'curso': ['React', 'Python']}
+pessoa['idade'] = 44  # Atualizando valor idade
+pessoa['curso'].append('Angular')
+print('\nImprimindo dicionario pessoa:\n{}'.format(pessoa))
+# Lendo o atributo idade e removendo do dicionario, metodo pop
+print('\nImprimindo a idade e removendo:\n{}'.format(pessoa.pop('idade')))
+pessoa.update({'idade': 40, 'Sexo': 'M'})  # Atualizando valores do dicionario
+print('\nImprimindo dicionario pessoa atualizado:\n{}'.format(pessoa))
+del pessoa['curso']  # Deletando a chave curso
+print('\nImprimindo dicionario pessoa sem curso:\n{}'.format(pessoa))
+pessoa.clear()  # Limpando o dicionario
+
+# Criando dicionarios com dois valores
+contacts = {'Jason': '555-0123', 'Carl': '555-0987'}
+# Atribuindo o valor da chave Jason a uma varivel
+jasons_phone = contacts['Jason']
+# Atribuindo o valor da chave Carl a uma variavel
+carls_phone = contacts['Carl']
 print("\nExemplo de dicionário")
-print('Dial {} to call Jason.'.format(jasons_phone)) # Imprimindo o valor da variavel do jasons
-print('Dial {} to call Carl.'.format(contacts['Carl'])) #Imprimindo diretamente o dicionario usando o valor da chave carl
+# Imprimindo o valor da variavel do jasons
+print('Dial {} to call Jason.'.format(jasons_phone))
+# Imprimindo diretamente o dicionario usando o valor da chave carl
+print('Dial {} to call Carl.'.format(contacts['Carl']))
 
 # Atualizando valores de um dicionarios
-contacts = {'Jason': '555-0123', 'Carl': '555-0987'} # Criando um dicionario
-contacts['Jason'] = '555-0000' # Atualizando valor da chave Jason
-jasons_phone = contacts['Jason'] # Armazenando valor da chave em uma variavel
+contacts = {'Jason': '555-0123', 'Carl': '555-0987'}  # Criando um dicionario
+contacts['Jason'] = '555-0000'  # Atualizando valor da chave Jason
+jasons_phone = contacts['Jason']  # Armazenando valor da chave em uma variavel
 print('\nAtualizando valores de um dicionario')
-print('Dial {} to call Jason.'.format(jasons_phone)) # Imprimindo variavel
+print('Dial {} to call Jason.'.format(jasons_phone))  # Imprimindo variavel
 
 # Adicionando itens a um dicionariso
-contacts = {'Jason': '555-0123', 'Carl': '555-0987'} # Criando um dicionarios
-contacts['Tony'] = '555-0570' # Adicionando novo item
+contacts = {'Jason': '555-0123', 'Carl': '555-0987'}  # Criando um dicionarios
+contacts['Tony'] = '555-0570'  # Adicionando novo item
 print('\nAdicionando itens a um dicionario')
-print(contacts) # Imprimindo o dicionario 
-print(len(contacts)) # Imprimindo quantidade de itens do dicionarios
+print(contacts)  # Imprimindo o dicionario
+print(len(contacts))  # Imprimindo quantidade de itens do dicionarios
 
 # Removendo um item do dicionario
-contacts = {'Jason': '555-0123', 'Carl': '555-0987'} # Criando o dicionario
-del contacts['Jason'] # Deletando o item Jason
+contacts = {'Jason': '555-0123', 'Carl': '555-0987'}  # Criando o dicionario
+del contacts['Jason']  # Deletando o item Jason
 print('\nDeletando um item do dicionario')
-print(contacts) # Imprimindo o dicionario
+print(contacts)  # Imprimindo o dicionario
 
 # Criando dicionario com valores diferentes, usando string e lista
-contacts = { 
+contacts = {
     'Jason': ['555-0123', '555-0000'],
     'Carl': '555-0987'
-} # Criando um dicionarios
+}  # Criando um dicionarios
 print('\nCrianod dicionario com diferente tipos de valores')
 print('Jason: {}'.format(contacts['Jason']))
 print('Carl:{}'.format(contacts['Carl']))
@@ -52,7 +70,7 @@ contacts = {
     'Carl': '555-0987'
 }
 print('\nImprimindo todos os telefones de Jason')
-for number in contacts['Jason']: 
+for number in contacts['Jason']:
     print('Phone: {}'.format(number))
 
 # Verificando se um valor existe dentro do dicionario usando if
@@ -60,11 +78,11 @@ contacts = {
     'Jason': ['555-0123', '555-0000'],
     'Carl': '555-0987'
 }
-if 'Jason' in contacts.keys(): # Se a chave Jason existir dentro do dicionario
+if 'Jason' in contacts.keys():  # Se a chave Jason existir dentro do dicionario
     print("\nJason's phone number is:")
-    print(contacts['Jason'][0]) # Imprimindo o primeiro telefone de Jason
+    print(contacts['Jason'][0])  # Imprimindo o primeiro telefone de Jason
 
-if 'Tony' in contacts.keys(): # Se a chave Tony existir dentro do dicionario
+if 'Tony' in contacts.keys():  # Se a chave Tony existir dentro do dicionario
     print("Tony's phone number is:")
     print(contacts['Tony'][0])
 
@@ -74,7 +92,7 @@ contacts = {
     'Carl': '555-0987'
 }
 print('\nVerificando se o numero existe dentro do dicionario')
-print('555-0987' in contacts.values()) # Se existe o retorno é True
+print('555-0987' in contacts.values())  # Se existe o retorno é True
 
 """
 Loop usando dicionarios, sintaxe:
@@ -101,7 +119,7 @@ contacts = {
     'Jason': '555-0123',
     'Carl': '555-0987'
 }
-print ('\nUsando for para percorrer um dicionario')
+print('\nUsando for para percorrer um dicionario')
 for contact in contacts:
     print('The number for {0} is {1}.'.format(contact, contacts[contact]))
 
@@ -131,6 +149,7 @@ for contact in contacts:
     print(contacts[contact]['email'])
 
 #
-#
-#Fontes: 
-#Curso Python for Beginners: Learn Python Programming (Python 3) Udemy Aula 54 a 55
+# Fontes:
+# Curso Python for Beginners: Learn Python Programming (Python 3) Udemy Aula 54 e 55
+# Curso Python 3 - Curso Completo do Básico ao Avançado Udemy Aula 51 e 52
+# https://github.com/cod3rcursos/curso-python/tree/master/fundamentos

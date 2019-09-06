@@ -17,6 +17,5 @@ while index < len(animals):
     index += 1
 
 
-
-#Fontes: 
-#Curso Python for Beginners: Learn Python Programming (Python 3) Udemy Aula 48
+# Fontes:
+# Curso Python for Beginners: Learn Python Programming (Python 3) Udemy Aula 48

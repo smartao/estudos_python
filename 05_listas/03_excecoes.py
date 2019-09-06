@@ -16,5 +16,5 @@ except:
 print(cat_index)
 
 #
-#Fontes: 
-#Curso Python for Beginners: Learn Python Programming (Python 3) Udemy Aula 47
+# Fontes:
+# Curso Python for Beginners: Learn Python Programming (Python 3) Udemy Aula 47
