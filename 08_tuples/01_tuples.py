@@ -8,7 +8,7 @@ Values accessed by index
 Iteration, looping, concatenation
 Use when data should not change!
 
-Sintaxe: 
+Sintaxe:
 tuple_name = (item_1, item_2, item_N)
 tuple_name = (item_1,) # Exemplo de um tuple com um unico valor
 
@@ -22,7 +22,8 @@ tuple_name = 1, 2, 3
 
 # Exemplo tuples funcionan como lista
 # Na linha de baixo exemplo da touple sem os paretentes
-# days_of_the_week = 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'
+# days_of_the_week = 'Monday', 'Tuesday', 'Wednesday',
+#   'Thursday', 'Friday', 'Saturday', 'Sunday'
 # tupla normal
 days_of_the_week = ('Monday', 'Tuesday', 'Wednesday',
                     'Thursday', 'Friday', 'Saturday', 'Sunday')
@@ -40,7 +41,7 @@ for day in days_of_the_week:
     print(day)
 
 # Não é possível modificar um tuple isso causara uma execao
-#days_of_the_week[0] = 'New Monday'
+# days_of_the_week[0] = 'New Monday'
 
 # Deletando um tuple
 del days_of_the_week
@@ -53,7 +54,7 @@ type() - Built-in function returns an object's type.
 '''
 
 # Convertendo tuple em list e vise versar
-print("\nTestando as funcoes de conversao de tuple para list e verificando o tipo")
+print("\nTestando funcoes de conversao de tuple para list e verificando tipo")
 days_of_the_week_tuple = ('Monday', 'Tuesday', 'Wednesday',
                           'Thursday', 'Friday', 'Saturday', 'Sunday')
 # convertendo um tuple para uma lista
@@ -61,7 +62,7 @@ days_of_the_week_list = list(days_of_the_week_tuple)
 print('days_of_the_week_tuple is {}.'.format(type(days_of_the_week_tuple)))
 print('days_of_the_week_list is {}.'.format(type(days_of_the_week_list)))
 
-print("\nTestando as funcoes de conversao de list para tuple e verificando o tipo")
+print("\nTestando funcoes de conversao de tuple para list e verificando tipo")
 animals_list = ['man', 'bear', 'pig']
 animals_tuple = tuple(animals_list)  # convertendo uma lista para um tuple
 print('animals_list is {}.'.format(type(animals_list)))
@@ -85,6 +86,8 @@ print(phone)
 print(email)
 
 # Utilizando o tuple junto com funcoes
+
+
 def high_and_low(numbers):
     """Determine the highest and lowest number"""
     highest = max(numbers)
