@@ -20,6 +20,12 @@ Um tupla pode ser definida sem os parenteses (), usando apenas virgula
 tuple_name = 1, 2, 3
 """
 
+'''
+OBSERVACAO
+Pela conversao PEP8 as "constantes" em python que nesse caso sao as tuplas
+por boas praticas devem ser escritar com letras MAISCULAS
+'''
+
 # Exemplo tuples funcionan como lista
 # Na linha de baixo exemplo da touple sem os paretentes
 # days_of_the_week = 'Monday', 'Tuesday', 'Wednesday',
@@ -111,5 +117,5 @@ for (name, phone) in contacts:
 
 # Fontes:
 # Curso Python for Beginners: Learn Python Programming (Python 3) Udemy Aula 60
-# Curso Python 3 - Curso Completo do Básico ao Avançado Udemy Aula 50
+# Curso Python 3 - Curso Completo do Básico ao Avançado Udemy Aula 50 e 84
 # https://github.com/cod3rcursos/curso-python/tree/master/fundamentos
