@@ -32,7 +32,6 @@ print(f'Nome: {nome} Idade: {idade}')
 print(f'Idade de {nome} daqui 10 anos = {idade+10:.2f}')
 
 # Método usando template, necessário configurar o import
-
 print('\nMetodo usando template:')
 s = Template('Nome: $n Idade: $ida')
 print(s.substitute(n=nome, ida=idade))
