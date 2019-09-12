@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 #
-### Lendo arquivos ###
+# Lendo arquivos ###
 '''
 open() Built-in Function that opens a file and returns a file object
 
@@ -27,7 +27,8 @@ tell() - Determine the current position in the file.
 
 Observacao
 Importante notar que mandar ler um arquivos duas vezes na segunda sera,
-retornando uma string vazia, pois não há mais dados para retornar à sua posição 
+retornando uma string vazia, pois
+    não há mais dados para retornar à sua posição
 atual do arquivo
 
 '''
@@ -57,7 +58,7 @@ Boa pratica, visto que um programa pode precisar ler muitos arquivos
 Ao longo da execucao e caso não feche pode ocorrer erros de leitura
 
 Após finalizar leitura utilize
-hosts.close() 
+hosts.close()
 '''
 
 # Verificando se o arquivo foi fechado
@@ -106,10 +107,12 @@ open(path_to_file, mode)
 mode - Description
 r = Open for read (default)
 w = Open writing, truncating first
-x = Create a new file and open it for writing < Utiliza para nao correr o risco de sobreescrever arquivos
+x = Create a new file and open it for writing <
+        Utiliza para nao correr o risco de sobreescrever arquivos
 a = Open writing, appending to file
 + = Open a file for updating (read/write)
-b = Binary mode # Contem serie de binarios, ex, imagens, videos, arquivos comprimidos e etc
+b = Binary mode
+    # Contem serie de binarios, ex, imagens, videos, arquivos comprimidos e etc
 t = Text mode (default) # Contem serie de strings
 
 '''
@@ -151,10 +154,10 @@ print('\nTrabalhando com excecao em arquivos')
 # If the file is unavailable, create an empty variable.
 try:
     contacts = open('contacts.txt').read()
-except:
+except Exception:
     contacts = []  # Caso nao exista sera criando a variavel
 print(len(contacts))
 
 #
 # Fontes:
-# Curso Python for Beginners: Learn Python Programming (Python 3) Udemy Aula 65 e 66
+# Curso Python for Beginners: Learn Python Programming Udemy Aula 65 e 66
