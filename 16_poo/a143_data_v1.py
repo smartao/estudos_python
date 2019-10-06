@@ -8,7 +8,7 @@ class Data:
         Todo método dentro de uma classe por convenção deve
         utilizar a palavra self, é o objeto que esta sendo acessado
         naquele momento
-     
+
      def __str__
      Método especial suportado por todos os objetos do python
      ele serve para imprimir o retorno sem precisar chamar o método em si
