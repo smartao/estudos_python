@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+import copy
 '''
 Sintaxe
 list_name = [item_1, item_2, item_N]
@@ -42,10 +43,25 @@ animals = []
 
 # Inserindo na lista, metodo insert
 print("\nInserindo um elemento na lista em uma posicao especifica")
-animals = ['man', 'bear', 'pig']
+animals = ['Man', 'bear', 'pig']
 animals.insert(0, 'horse')  # horse na posicao 0
 animals.insert(2, 'duck')  # pato na posicao 2
 print(animals)
+
+print('\nValidando se um elemento esta na lista')
+print('duck' in animals)  # Verdadeiro
+print('ducks' in animals)  # Falso
+if 'duck' in animals:
+    print('Animal encontrado!!')
+
+newanimals = copy.copy(animals)
+newanimals[1] = 'dog'
+print(animals)
+print(newanimals)
+
+'''
+Oara copiar um lista que contenha outras listas utiliza o método copy.deepcopy
+'''
 #
 # Fontes:
 # Curso Python for Beginners: Learn Python Programming (Python 3) Udemy Aula 45

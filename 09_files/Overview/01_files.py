@@ -91,12 +91,12 @@ print('File closed? {}'.format(hosts.closed))
 # O resultando padrao é uma linha branca entre cada linha do arquivo
 # Isso porque a linha completa contem o caractere de quebra de linha
 print('\nImprimindo um arquio linha por linha')
-with open('08_files/file.txt') as the_file:
+with open('09_files/file.txt') as the_file:
     for line in the_file:
         print(line)
 
 print('\nImprimindo um arquio linha por linha sem linhas em branco!')
-with open('08_files/file.txt') as the_file:
+with open('09_files/file.txt') as the_file:
     for line in the_file:
         print(line.rstrip())
 
@@ -117,16 +117,17 @@ t = Text mode (default) # Contem serie de strings
 
 '''
 print('\nVerificando o modo do arquivo')
-with open('08_files/file.txt') as the_file:
+with open('09_files/file.txt') as the_file:
     print(the_file.mode)
 
-# Escrevendo dentro de um arquivo, usando o método write
+# Gravando Escrevendo dentro de um arquivo, usando o método write
 print('\nEscrevendo dentro de arquivos e imprimindo o que foi escrito')
-with open('08_files/file2.txt', 'w') as the_file:
+with open('09_files/file2.txt', 'w') as the_file:
     the_file.write('This text will be written to the file.\n')
     the_file.write('Here is more text.\n')
 
-with open('08_files/file2.txt') as the_file:
+# Imprimindo o que foi escrito
+with open('09_files/file2.txt') as the_file:
     print(the_file.read())
 
 '''
@@ -142,7 +143,7 @@ Carriage Returns and Line Feeds
 
 # Trabalhando com arquivos binarios
 print('\nLendo caracteres de arquivos binarios como imagens')
-with open('08_files/cat.jpg', 'rb') as cat_picture:  # Abrindo o arquivos
+with open('09_files/cat.jpg', 'rb') as cat_picture:  # Abrindo o arquivos
     cat_picture.seek(2)  # Indo para o 2 byte do arquivo
     cat_picture.read(4)  # Lendo 4 byte do arquivo
     print(cat_picture.tell())  # Imprimindo a posicao corrent do arquivos

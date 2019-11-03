@@ -17,5 +17,9 @@ while index < len(animals):
     index += 1
 
 
+print('\nExemplo for percorrendo uma lista')
+for i in range(len(animals)):
+    print('Index ' + str(i) + ' in animals is: ' + animals[i])
+
 # Fontes:
 # Curso Python for Beginners: Learn Python Programming (Python 3) Udemy Aula 48
