@@ -1,7 +1,7 @@
 Instalando o python3
 
 Ubuntu
-$ sudo apt-get install -y python3 idle3
+$ sudo apt-get install -y python3
 
 CentOS
 $ yum install -y python3 python3-tools

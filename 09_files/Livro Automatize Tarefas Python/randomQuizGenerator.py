@@ -34,8 +34,8 @@ capitals = {'Alabama': 'Montgomery', 'Alaska': 'Juneau', 'Arizona': 'Phoenix',
 # Gera os arquivos contendo as provas, total de 35 provas
 for quizNum in range(35):
     # Criar os arquivos com as provas e os gabaritos das respostas
-    quizFile = open('capitalsquiz%s-tmp.txt' % (quizNum + 1), 'w')
-    answerKeyFile = open('capitalsquiz_answers%s-tmp.txt' % (quizNum + 1), 'w')
+    quizFile = open('quiz/capitalsquiz%s-tmp.txt' % (quizNum + 1), 'w')
+    answerKeyFile = open('quiz/capitalsquiz_answers%s-tmp.txt' % (quizNum + 1), 'w')
 
     # Escreve o cabeçalho da prova
     quizFile.write('Name:\n\nDate:\n\nPeriod:\n\n')
@@ -43,12 +43,12 @@ for quizNum in range(35):
 
     # Coleta todos os estados em uma lista chamado states
     states = list(capitals.keys())
-    # Embaralha a ordem dos estados
+    # Embaralha a ordem dos estados para gerar perguntas aleatorias
     random.shuffle(states)
 
     # Percore todos os 50 estados em um loop, criando uma pergunta para cada um
     for questionNum in range(50):
-        # Guardando o restado correto em um string
+        # Guardando o restado correto da pergunta em um string
         # capitals é o dicionario, que pega a lista state com o index
         correctAnswer = capitals[states[questionNum]]
         # Criando uma lista com todos os valores do dicionario capitals
@@ -87,10 +87,9 @@ for quizNum in range(35):
         # e 'ABCD'[answerOptions.index(correctAnswer)])) será
         # avaliada com a letra da resposta correta, que será grava no arquivo
         # contendo o gabarito
-
+        # questionNum + 1 para nao comecar na pergunta zero e sim na 1
         answerKeyFile.write('%s. %s\n' % (
             questionNum + 1, 'ABCD'[answerOptions.index(correctAnswer)]))
-        # questionNum + 1 para nao comecar na pergunta zero e sim na 1
 
 # Fechando os arquivos
 quizFile.close()
