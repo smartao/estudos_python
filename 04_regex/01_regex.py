@@ -182,7 +182,7 @@ haRegex = re.compile(r'(Ha){3}')
 mo1 = haRegex.search('HaHaHa')
 print(mo1.group())
 mo2 = haRegex.search('Ha')
-print(mo2 == None)  # Retornara True
+print(mo2 is None)  # Retornara True
 
 '''
 Correspondencia greedy e nongreedy

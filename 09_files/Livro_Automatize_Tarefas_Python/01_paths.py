@@ -51,6 +51,7 @@ if os.path.exists('/tmp/python/automatize/tarefas'):
 else:
     os.makedirs('/tmp/python/automatize/tarefas')
     print('diretorio criado')
+# Obs: os.mknod criar arquivos
 
 '''
 Lidando com paths absolutos e relativos

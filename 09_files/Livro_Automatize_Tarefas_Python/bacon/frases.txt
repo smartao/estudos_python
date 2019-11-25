@@ -1,0 +1,4 @@
+primeira linha de um arquivo
+agora comeca a seguda linha
+temos tambem a terceira linha
+e para finalizar a ultima linha

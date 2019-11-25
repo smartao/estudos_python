@@ -34,7 +34,7 @@ class TerminalColor:
 def help():
     print("É necessário informar o raio do círculo.")
     # [2:] = Cortando os dois primeiros (./) caracteres do argumento
-    print("Sintaxe: {} <raio>".format(sys.argv[0][2:]))
+    print("Sintaxe: {} <raio>".format(sys.argv[0]))
 
 
 def circulo(raio):  # Funcao que retorna o raio
