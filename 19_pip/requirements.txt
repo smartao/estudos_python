@@ -45,7 +45,7 @@ pbr==3.1.1
 pexpect==4.2.1
 Pillow==6.2.1
 pinggraph==1.1
-psutil==5.4.2
+psutil==5.6.6
 pyasn1==0.4.7
 pyasn1-modules==0.2.7
 pycairo==1.16.2
